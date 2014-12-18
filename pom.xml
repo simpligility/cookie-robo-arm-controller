@@ -9,12 +9,8 @@
   <packaging>apk</packaging>
 
   <name>Cookie Robo Arm Controller</name>
-  <properties>
-    <!-- at test time this will be overridden with snapshot version -->
-    <it-plugin.version>4.0.0-rc.1</it-plugin.version>
-  </properties>
+  
   <dependencies>
-
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
@@ -31,9 +27,9 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <groupId>com.simpligility.maven.plugins</groupId>
         <artifactId>android-maven-plugin</artifactId>
-        <version>${it-plugin.version}</version>
+        <version>4.0.0</version>
         <extensions>true</extensions>
         <configuration>
           <sdk>
